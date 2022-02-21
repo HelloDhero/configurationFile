@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="DUAN Maven PMD Plugin Ruleset" xmlns="http://pmd.sourceforge.net/ruleset/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+
+    <description>https://pmd.github.io/latest/pmd_userdocs_making_rulesets.html</description>
+
+    <rule ref="category/java/bestpractices.xml">
+        <exclude name="MissingOverride" />
+        <exclude name="GuardLogStatement" />
+        <exclude name="PreserveStackTrace" />
+        <exclude name="AbstractClassWithoutAbstractMethod" />
+        <exclude name="AvoidReassigningParameters" />
+    </rule>
+
+    <rule ref="category/java/codestyle.xml">
+        <exclude name="ShortVariable" />
+        <exclude name="LongVariable" />
+        <exclude name="LocalVariableCouldBeFinal" />
+        <exclude name="MethodArgumentCouldBeFinal" />
+        <exclude name="AtLeastOneConstructor" />
+        <exclude name="OnlyOneReturn" />
+        <exclude name="CommentDefaultAccessModifier" />
+        <exclude name="UseUnderscoresInNumericLiterals" />
+        <exclude name="FieldDeclarationsShouldBeAtStartOfClass" />
+        <exclude name="EmptyMethodInAbstractClassShouldBeAbstract" />
+        <exclude name="UselessParentheses" />
+        <exclude name="UnnecessaryConstructor" />
+        <exclude name="ShortClassName" />
+        <exclude name="ShortMethodName" />
+        <exclude name="LinguisticNaming" />
+        <exclude name="UnnecessaryAnnotationValueElement" />
+    </rule>
+
+    <rule ref="category/java/design.xml">
+        <exclude name="AvoidDeeplyNestedIfStmts" />
+        <exclude name="DataClass" />
+        <exclude name="LawOfDemeter" />
+        <exclude name="AvoidCatchingGenericException" />
+        <exclude name="AvoidThrowingRawExceptionTypes" />
+        <exclude name="ExcessiveParameterList" />
+        <exclude name="LoosePackageCoupling" />
+        <exclude name="ExcessiveImports" />
+        <exclude name="CouplingBetweenObjects" />
+        <exclude name="TooManyMethods" />
+        <exclude name="UseObjectForClearerAPI" />
+        <exclude name="CyclomaticComplexity" />
+        <exclude name="CognitiveComplexity" />
+        <exclude name="UseUtilityClass" />
+        <exclude name="SignatureDeclareThrowsException" />
+    </rule>
+
+    <rule ref="category/java/errorprone.xml">
+        <exclude name="BeanMembersShouldSerialize" />
+        <exclude name="CloseResource" />
+        <exclude name="MissingSerialVersionUID" />
+        <exclude name="MissingStaticMethodInNonInstantiatableClass" />
+        <exclude name="AvoidLiteralsInIfCondition" />
+        <exclude name="AvoidAccessibilityAlteration" />
+        <exclude name="AvoidDuplicateLiterals" />
+        <exclude name="ConstructorCallsOverridableMethod" />
+        <exclude name="UseLocaleWithCaseConversions" />
+        <exclude name="AvoidFieldNameMatchingMethodName" />
+    </rule>
+
+    <rule ref="category/java/multithreading.xml">
+        <exclude name="UseConcurrentHashMap" />
+        <exclude name="AvoidSynchronizedAtMethodLevel" />
+    </rule>
+
+    <rule ref="category/java/performance.xml">
+        <exclude name="AvoidFileStream" />
+        <exclude name="AvoidInstantiatingObjectsInLoops" />
+    </rule>
+
+</ruleset>
