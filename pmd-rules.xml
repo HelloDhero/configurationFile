@@ -70,6 +70,7 @@
     <rule ref="category/java/performance.xml">
         <exclude name="AvoidFileStream" />
         <exclude name="AvoidInstantiatingObjectsInLoops" />
+        <exclude name="ConsecutiveAppendsShouldReuse"/>
     </rule>
 
 </ruleset>
