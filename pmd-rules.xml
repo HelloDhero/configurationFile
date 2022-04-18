@@ -47,6 +47,7 @@
         <exclude name="CognitiveComplexity" />
         <exclude name="UseUtilityClass" />
         <exclude name="SignatureDeclareThrowsException" />
+        <exclude name="ImmutableField" />
     </rule>
 
     <rule ref="category/java/errorprone.xml">
