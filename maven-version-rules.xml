@@ -4,5 +4,6 @@
 		<ignoreVersion type="regex">\d{8}(.\d{6}){0,1}</ignoreVersion>
 		<ignoreVersion type="regex">(?i).*(android|graal|alpha|native-mt|beta|atlassian|preview|dev|cr|rc|java11|jre16|jre11).*</ignoreVersion>
 		<ignoreVersion type="regex">.*(-|.){1}M\d{1,2}$</ignoreVersion>
+		<ignoreVersion type="regex">\d{1}.\d{1,}(ea|b)\d{1,}</ignoreVersion>
 	</ignoreVersions>
 </ruleset>
