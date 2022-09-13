@@ -21,6 +21,9 @@
     <Match>
         <Bug pattern="DMI_RANDOM_USED_ONLY_ONCE"/>
     </Match>
+    <Match>
+        <Bug pattern="SA_LOCAL_SELF_COMPARISON"/>
+    </Match>
     <!--
     <Match>
         <Bug pattern="SERVLET_PARAMETER" />
