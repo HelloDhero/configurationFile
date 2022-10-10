@@ -7,5 +7,6 @@
         <ignoreVersion type="regex">.*(-|.){1}(M|m)\d{1,2}$</ignoreVersion>
         <ignoreVersion type="regex">\d{1}.\d{1,}(ea|b)\d{1,}</ignoreVersion>
         <ignoreVersion type="regex">\d.\d.\d-b\d{6}.\d{4}</ignoreVersion>
+        <ignoreVersion type="regex">\d.\d.\d-b\d{2}</ignoreVersion>
     </ignoreVersions>
 </ruleset>
