@@ -4,27 +4,34 @@
 <module name="com.puppycrawl.tools.checkstyle.Checker">
     <module name="io.spring.javaformat.checkstyle.SpringChecks">
         <property name="excludes" value="io.spring.javaformat.checkstyle.check.SpringHeaderCheck"/>
-        <property name="excludes" value="io.spring.javaformat.checkstyle.check.SpringAvoidStaticImportCheck"/>
         <property name="excludes" value="io.spring.javaformat.checkstyle.check.SpringImportOrderCheck"/>
         <property name="excludes" value="io.spring.javaformat.checkstyle.check.SpringLambdaCheck"/>
+        <property name="excludes" value="io.spring.javaformat.checkstyle.check.SpringAvoidStaticImportCheck"/>
         <property name="excludes" value="io.spring.javaformat.checkstyle.check.SpringCatchCheck"/>
         <property name="excludes" value="io.spring.javaformat.checkstyle.check.SpringTernaryCheck"/>
         <property name="excludes" value="io.spring.javaformat.checkstyle.check.SpringMethodOrderCheck"/>
         <property name="excludes" value="io.spring.javaformat.checkstyle.check.SpringJavadocCheck"/>
-        <property name="excludes" value="io.spring.javaformat.checkstyle.check.SpringHideUtilityClassConstructor"/>
-        <property name="excludes" value="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
-        <property name="excludes" value="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+        <property name="excludes" value="com.puppycrawl.tools.checkstyle.checks.coding.RequireThisCheck"/>
         <property name="excludes" value="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
         <property name="excludes" value="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
         <property name="excludes" value="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
-        <property name="excludes" value="com.puppycrawl.tools.checkstyle.checks.javadoc.NonEmptyAtclauseDescriptionCheck"/>
+        <property name="excludes" value="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
         <property name="excludes" value="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-        <property name="excludes" value="com.puppycrawl.tools.checkstyle.checks.coding.RequireThisCheck"/>
-        <property name="excludes" value="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+        <property name="excludes" value="com.puppycrawl.tools.checkstyle.checks.javadoc.NonEmptyAtclauseDescriptionCheck"/>
+        <property name="excludes" value="com.puppycrawl.tools.checkstyle.checks.javadoc.AtclauseOrderCheck"/>
+        <property name="excludes" value="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
         <property name="excludes" value="com.puppycrawl.tools.checkstyle.checks.design.MutableExceptionCheck"/>
+        <property name="excludes" value="com.puppycrawl.tools.checkstyle.checks.design.InnerTypeLastCheck"/>
         <property name="excludes" value="com.puppycrawl.tools.checkstyle.checks.design.OneTopLevelClassCheck"/>
         <property name="excludes" value="com.puppycrawl.tools.checkstyle.checks.annotation.AnnotationUseStyleCheck"/>
+        <!--
+        <property name="excludes" value="io.spring.javaformat.checkstyle.check.SpringHideUtilityClassConstructor"/>
+        <property name="excludes" value="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
         <property name="excludes" value="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+        -->
+        <property name="excludes" value="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+        <property name="excludes" value="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+        <property name="excludes" value="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
         <property name="excludes" value="com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"/>
     </module>
 </module>
