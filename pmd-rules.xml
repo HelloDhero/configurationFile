@@ -2,70 +2,55 @@
 
 <ruleset xmlns="http://pmd.sourceforge.net/ruleset/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="DUAN Maven PMD Plugin Ruleset" xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
     <description>https://pmd.github.io/latest/pmd_userdocs_making_rulesets.html</description>
-    <rule ref="category/java/bestpractices.xml">
-        <exclude name="MissingOverride"/>
-        <exclude name="GuardLogStatement"/>
-        <exclude name="PreserveStackTrace"/>
-        <exclude name="AbstractClassWithoutAbstractMethod"/>
-        <exclude name="AvoidReassigningParameters"/>
-    </rule>
-    <rule ref="category/java/codestyle.xml">
-        <exclude name="ShortVariable"/>
-        <exclude name="LongVariable"/>
-        <exclude name="LocalVariableCouldBeFinal"/>
-        <exclude name="MethodArgumentCouldBeFinal"/>
-        <exclude name="AtLeastOneConstructor"/>
-        <exclude name="OnlyOneReturn"/>
-        <exclude name="CommentDefaultAccessModifier"/>
-        <exclude name="UseUnderscoresInNumericLiterals"/>
-        <exclude name="FieldDeclarationsShouldBeAtStartOfClass"/>
-        <exclude name="EmptyMethodInAbstractClassShouldBeAbstract"/>
-        <exclude name="UselessParentheses"/>
-        <exclude name="UnnecessaryConstructor"/>
-        <exclude name="ShortClassName"/>
-        <exclude name="ShortMethodName"/>
-        <exclude name="LinguisticNaming"/>
-        <exclude name="UnnecessaryAnnotationValueElement"/>
-    </rule>
-    <rule ref="category/java/design.xml">
-        <exclude name="AvoidDeeplyNestedIfStmts"/>
-        <exclude name="DataClass"/>
-        <exclude name="LawOfDemeter"/>
-        <exclude name="AvoidCatchingGenericException"/>
-        <exclude name="AvoidThrowingRawExceptionTypes"/>
-        <exclude name="ExcessiveParameterList"/>
-        <exclude name="LoosePackageCoupling"/>
-        <exclude name="ExcessiveImports"/>
-        <exclude name="CouplingBetweenObjects"/>
-        <exclude name="TooManyMethods"/>
-        <exclude name="UseObjectForClearerAPI"/>
-        <exclude name="CyclomaticComplexity"/>
-        <exclude name="CognitiveComplexity"/>
-        <exclude name="UseUtilityClass"/>
-        <exclude name="SignatureDeclareThrowsException"/>
-        <exclude name="ImmutableField"/>
-    </rule>
-    <rule ref="category/java/errorprone.xml">
-        <exclude name="BeanMembersShouldSerialize"/>
-        <exclude name="CloseResource"/>
-        <exclude name="MissingSerialVersionUID"/>
-        <exclude name="MissingStaticMethodInNonInstantiatableClass"/>
-        <exclude name="AvoidLiteralsInIfCondition"/>
-        <exclude name="AvoidAccessibilityAlteration"/>
-        <exclude name="AvoidDuplicateLiterals"/>
-        <exclude name="ConstructorCallsOverridableMethod"/>
-        <exclude name="UseLocaleWithCaseConversions"/>
-        <exclude name="AvoidFieldNameMatchingMethodName"/>
-    </rule>
-    <rule ref="category/java/multithreading.xml">
-        <exclude name="UseConcurrentHashMap"/>
-        <exclude name="DoNotUseThreads"/>
-        <exclude name="AvoidSynchronizedAtMethodLevel"/>
-    </rule>
-    <rule ref="category/java/performance.xml">
-        <exclude name="AvoidFileStream"/>
-        <exclude name="AvoidInstantiatingObjectsInLoops"/>
-        <exclude name="ConsecutiveLiteralAppends"/>
-        <exclude name="ConsecutiveAppendsShouldReuse"/>
+    
+    <exclude-pattern>.*/com/alibaba/csp/sentinel/.*</exclude-pattern>
+    <exclude-pattern>.*/com/framework/tinyrules/.*</exclude-pattern>
+    <exclude-pattern>.*/com/service/.*</exclude-pattern>
+    
+    <exclude-pattern>.*/com/framework/thirdpart/wx/mp/aes/WxBizMsgCrypt.*</exclude-pattern>
+    <exclude-pattern>.*/com/framework/thirdpart/wx/mp/aes/WxSHA1.*</exclude-pattern>
+    
+    <exclude-pattern>.*/com/erayt/rsk/sdk/cache/RskIndexRefDataDefineCache.*</exclude-pattern>
+    <exclude-pattern>.*/com/erayt/rsk/sdk/utils/IdWorker.*</exclude-pattern>
+    <exclude-pattern>.*/com/erayt/rsk/service/common/action/route/RskTranCode.*</exclude-pattern>
+    
+    <rule ref="io/github/dgroup/arch4u/pmd/arch4u-ruleset.xml">
+        <exclude name="ConstructorCallsOverridableMethod" />
+        <exclude name="UseUnderscoresInNumericLiterals" />
+        <exclude name="MissingStaticMethodInNonInstantiatableClass" />
+        <exclude name="NoMandatoryConstructorInExceptionClass" />
+        <exclude name="RestEndpointsWithoutExposedMetrics" />
+        <exclude name="UseOpenApiInRestEndpoints" />
+        <exclude name="ClassNamingConventions" />
+        <exclude name="ShortMethodName" />
+        <exclude name="DoubleBraceInitialization" />
+        <exclude name="UseTryWithResources" />
+        <exclude name="MissingOverride" />
+        <exclude name="DataClass" />
+        <exclude name="AvoidFieldNameMatchingMethodName" />
+        <exclude name="LongVariable" />
+        <exclude name="AvoidSynchronizedAtMethodLevel" />
+        <exclude name="AvoidBranchingStatementAsLastInLoop" />
+        <exclude name="UncommentedEmptyMethodBody" />
+        <exclude name="ConfusingTernary" />
+        <exclude name="CloseResource" />
+        <exclude name="DoNotUseThreads" />
+        <exclude name="AvoidReassigningParameters" />
+        <exclude name="AvoidDeeplyNestedIfStmts" />
+        <exclude name="CommentRequired" />
+        <exclude name="CommentDefaultAccessModifier" />
+        <exclude name="NcssCount" />
+        <exclude name="NPathComplexity" />
+        <exclude name="CognitiveComplexity" />
+        <exclude name="CyclomaticComplexity" />
+        <exclude name="ExcessiveMethodLength" />
+        <exclude name="FieldDeclarationsShouldBeAtStartOfClass" />
+        <exclude name="MethodArgumentCouldBeFinal" />
+        <exclude name="LocalVariableCouldBeFinal" />
+        <exclude name="ShortVariable" />
+        <exclude name="AvoidThrowingRawExceptionTypes" />
+        <exclude name="ConsecutiveLiteralAppends" />
+        <exclude name="AvoidLiteralsInIfCondition" />
+        <exclude name="AvoidInstantiatingObjectsInLoops" />
     </rule>
 </ruleset>
