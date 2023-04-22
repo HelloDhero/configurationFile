@@ -1,56 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ruleset xmlns="http://pmd.sourceforge.net/ruleset/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="DUAN Maven PMD Plugin Ruleset" xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+<ruleset xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="DUAN Maven PMD Plugin Ruleset"
+    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
     <description>https://pmd.github.io/latest/pmd_userdocs_making_rulesets.html</description>
+
+    <exclude-pattern>.*/target/generated-sources/.*</exclude-pattern>
+    <exclude-pattern>.*/build/generated-sources/.*</exclude-pattern>
     
-    <exclude-pattern>.*/com/alibaba/csp/sentinel/.*</exclude-pattern>
-    <exclude-pattern>.*/com/framework/tinyrules/.*</exclude-pattern>
-    <exclude-pattern>.*/com/service/.*</exclude-pattern>
-    
-    <exclude-pattern>.*/com/framework/thirdpart/wx/mp/aes/WxBizMsgCrypt.*</exclude-pattern>
-    <exclude-pattern>.*/com/framework/thirdpart/wx/mp/aes/WxSHA1.*</exclude-pattern>
-    
-    <exclude-pattern>.*/com/erayt/rsk/sdk/cache/RskIndexRefDataDefineCache.*</exclude-pattern>
-    <exclude-pattern>.*/com/erayt/rsk/sdk/utils/IdWorker.*</exclude-pattern>
-    <exclude-pattern>.*/com/erayt/rsk/service/common/action/route/RskTranCode.*</exclude-pattern>
-    
-    <rule ref="io/github/dgroup/arch4u/pmd/arch4u-ruleset.xml">
-        <exclude name="ConstructorCallsOverridableMethod" />
-        <exclude name="UseUnderscoresInNumericLiterals" />
-        <exclude name="MissingStaticMethodInNonInstantiatableClass" />
-        <exclude name="NoMandatoryConstructorInExceptionClass" />
-        <exclude name="RestEndpointsWithoutExposedMetrics" />
-        <exclude name="UseOpenApiInRestEndpoints" />
-        <exclude name="ClassNamingConventions" />
-        <exclude name="ShortMethodName" />
+    <rule ref="rulesets/internal/all-ecmascript.xml" />
+
+    <rule ref="rulesets/internal/all-java.xml">
+        <exclude name="UncommentedEmptyConstructor" />
         <exclude name="DoubleBraceInitialization" />
-        <exclude name="UseTryWithResources" />
-        <exclude name="MissingOverride" />
-        <exclude name="DataClass" />
-        <exclude name="AvoidFieldNameMatchingMethodName" />
-        <exclude name="LongVariable" />
-        <exclude name="AvoidSynchronizedAtMethodLevel" />
-        <exclude name="AvoidBranchingStatementAsLastInLoop" />
-        <exclude name="UncommentedEmptyMethodBody" />
-        <exclude name="ConfusingTernary" />
-        <exclude name="CloseResource" />
-        <exclude name="DoNotUseThreads" />
-        <exclude name="AvoidReassigningParameters" />
-        <exclude name="AvoidDeeplyNestedIfStmts" />
         <exclude name="CommentRequired" />
         <exclude name="CommentDefaultAccessModifier" />
-        <exclude name="NcssCount" />
-        <exclude name="NPathComplexity" />
-        <exclude name="CognitiveComplexity" />
-        <exclude name="CyclomaticComplexity" />
-        <exclude name="ExcessiveMethodLength" />
-        <exclude name="FieldDeclarationsShouldBeAtStartOfClass" />
         <exclude name="MethodArgumentCouldBeFinal" />
         <exclude name="LocalVariableCouldBeFinal" />
+        <exclude name="UseConcurrentHashMap" />
+        <exclude name="CommentSize" />
         <exclude name="ShortVariable" />
-        <exclude name="AvoidThrowingRawExceptionTypes" />
-        <exclude name="ConsecutiveLiteralAppends" />
-        <exclude name="AvoidLiteralsInIfCondition" />
+        <exclude name="LongVariable" />
+        <exclude name="OnlyOneReturn" />
         <exclude name="AvoidInstantiatingObjectsInLoops" />
+        <exclude name="MissingSerialVersionUID" />
+        <exclude name="AtLeastOneConstructor" />
+        <exclude name="DataClass" />
+        <exclude name="AvoidThrowingRawExceptionTypes" />
+        <exclude name="AvoidFieldNameMatchingMethodName" />
+        <exclude name="FieldDeclarationsShouldBeAtStartOfClass" />
+        <exclude name="MissingStaticMethodInNonInstantiatableClass" />
+        <exclude name="LawOfDemeter" />
+        <exclude name="GuardLogStatement" />
+        <exclude name="TooManyFields" />
+        <exclude name="ExcessivePublicCount" />
+        <exclude name="UncommentedEmptyMethodBody" />
+        <exclude name="AvoidSynchronizedAtMethodLevel" />
+        <exclude name="AvoidCatchingGenericException" />
+        <exclude name="CyclomaticComplexity" />
+        <exclude name="AvoidCatchingGenericException" />
+        <exclude name="TooManyMethods" />
+        <exclude name="NcssCount" />
+        <exclude name="AvoidLiteralsInIfCondition" />
+        <exclude name="CouplingBetweenObjects" />
+        <exclude name="NPathComplexity" />
+        <exclude name="UseUnderscoresInNumericLiterals" />
+        <exclude name="ExcessiveImports" />
+        <exclude name="AvoidDuplicateLiterals" />
+        <exclude name="CognitiveComplexity" />
+        <exclude name="CloseResource" />
+        <exclude name="FieldNamingConventions" />
+        <exclude name="UseObjectForClearerAPI" />
+        <exclude name="DoNotUseThreads" />
+        <exclude name="ConstructorCallsOverridableMethod" />
+        <exclude name="ConfusingTernary" />
+        <exclude name="AvoidDeeplyNestedIfStmts" />
+        <exclude name="AvoidFieldNameMatchingTypeName" />
+        <exclude name="SignatureDeclareThrowsException" />
+        <exclude name="GodClass" />
+        <exclude name="ShortClassName" />
+        <exclude name="UseUtilityClass" />
+        <exclude name="AvoidReassigningParameters" />
+        <exclude name="ConsecutiveLiteralAppends" />
+        <exclude name="AccessorMethodGeneration" />
+        <exclude name="NullAssignment" />
+        <exclude name="OptimizableToArrayCall" />
+        <exclude name="UseVarargs" />
+        <exclude name="EmptyControlStatement" />
+        <exclude name="CallSuperInConstructor" />
+        <exclude name="PackageCase" />
+    </rule>
+
+    <rule ref="rulesets/java/quickstart.xml">
+        <exclude name="UncommentedEmptyConstructor" />
+        <exclude name="GuardLogStatement" />
+        <exclude name="UncommentedEmptyMethodBody" />
+        <exclude name="MissingStaticMethodInNonInstantiatableClass" />
+        <exclude name="UncommentedEmptyMethodBody" />
+        <exclude name="CloseResource" />
+        <exclude name="UseUtilityClass" />
+        <exclude name="DoubleBraceInitialization" />
+        <exclude name="DoubleBraceInitialization" />
+        <exclude name="OptimizableToArrayCall" />
+        <exclude name="EmptyControlStatement" />
+        <exclude name="PackageCase" />
+    </rule>
+
+    <rule ref="io/github/dgroup/arch4u/pmd/arch4u-ruleset.xml">
+        <exclude name="UncommentedEmptyConstructor" />
+        <exclude name="ShortVariable" />
+        <exclude name="DataClass" />
+        <exclude name="CommentRequired" />
+        <exclude name="MethodArgumentCouldBeFinal" />
+        <exclude name="LocalVariableCouldBeFinal" />
+        <exclude name="CommentDefaultAccessModifier" />
+        <exclude name="ExcessivePublicCount" />
+        <exclude name="AvoidInstantiatingObjectsInLoops" />
+        <exclude name="AvoidFieldNameMatchingMethodName" />
+        <exclude name="LongVariable" />
+        <exclude name="FieldDeclarationsShouldBeAtStartOfClass" />
+        <exclude name="CyclomaticComplexity" />
+        <exclude name="NPathComplexity" />
+        <exclude name="AvoidSynchronizedAtMethodLevel" />
+        <exclude name="CloseResource" />
+        <exclude name="AvoidThrowingRawExceptionTypes" />
+        <exclude name="NcssCount" />
+        <exclude name="AvoidDeeplyNestedIfStmts" />
+        <exclude name="AvoidLiteralsInIfCondition" />
+        <exclude name="CognitiveComplexity" />
+        <exclude name="FieldNamingConventions" />
+        <exclude name="DoNotUseThreads" />
+        <exclude name="UseUnderscoresInNumericLiterals" />
+        <exclude name="AvoidFieldNameMatchingTypeName" />
+        <exclude name="GodClass" />
+        <exclude name="ConfusingTernary" />
+        <exclude name="OptimizableToArrayCall" />
+        <exclude name="NullAssignment" />
+        <exclude name="UseVarargs" />
+        <exclude name="ConsecutiveLiteralAppends" />
+        <exclude name="DoubleBraceInitialization" />
+        <exclude name="AccessorMethodGeneration" />
+        <exclude name="UseOpenApiInRestEndpoints" />
+        <exclude name="RestEndpointsWithoutExposedMetrics" />
+        <exclude name="UncommentedEmptyMethodBody" />
+        <exclude name="NoMandatoryConstructorInExceptionClass" />
+        <exclude name="MissingStaticMethodInNonInstantiatableClass" />
+        <exclude name="ConstructorCallsOverridableMethod" />
+        <exclude name="AvoidReassigningParameters" />
+        <exclude name="EmptyControlStatement" />
+        <exclude name="CallSuperInConstructor" />
+        <exclude name="PackageCase" />
+        <!--
+        <exclude name="ClassNamingConventions" />
+        <exclude name="ShortMethodName" />
+        <exclude name="UseTryWithResources" />
+        <exclude name="AvoidBranchingStatementAsLastInLoop" />
+        <exclude name="LooseCoupling" />
+        <exclude name="UnnecessaryFullyQualifiedName" />
+        <exclude name="ExcessiveMethodLength" />
+        <exclude name="MethodReturnsInternalArray" />
+        <exclude name="ArrayIsStoredDirectly" />
+        <exclude name="ExcessiveParameterList" />
+        <exclude name="PreserveStackTrace" />
+        -->
     </rule>
 </ruleset>
