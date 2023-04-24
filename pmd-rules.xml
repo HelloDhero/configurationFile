@@ -8,8 +8,6 @@
     <exclude-pattern>.*/target/generated-sources/.*</exclude-pattern>
     <exclude-pattern>.*/build/generated-sources/.*</exclude-pattern>
     
-    <rule ref="rulesets/internal/all-ecmascript.xml" />
-
     <rule ref="rulesets/internal/all-java.xml">
         <exclude name="UncommentedEmptyConstructor" />
         <exclude name="DoubleBraceInitialization" />
