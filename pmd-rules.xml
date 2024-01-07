@@ -9,6 +9,7 @@
     <exclude-pattern>.*/build/generated-sources/.*</exclude-pattern>
     
     <rule ref="rulesets/internal/all-java.xml">
+        <exclude name="DoubleBraceInitialization" />
         <exclude name="UncommentedEmptyConstructor" />
         <exclude name="DoubleBraceInitialization" />
         <exclude name="CommentRequired" />
@@ -67,9 +68,12 @@
         <exclude name="EmptyControlStatement" />
         <exclude name="CallSuperInConstructor" />
         <exclude name="PackageCase" />
+        <exclude name="EmptyMethodInAbstractClassShouldBeAbstract" />
+        <exclude name="LoosePackageCoupling" />
     </rule>
 
     <rule ref="rulesets/java/quickstart.xml">
+        <exclude name="DoubleBraceInitialization" />
         <exclude name="UncommentedEmptyConstructor" />
         <exclude name="GuardLogStatement" />
         <exclude name="UncommentedEmptyMethodBody" />
@@ -77,14 +81,13 @@
         <exclude name="UncommentedEmptyMethodBody" />
         <exclude name="CloseResource" />
         <exclude name="UseUtilityClass" />
-        <exclude name="DoubleBraceInitialization" />
-        <exclude name="DoubleBraceInitialization" />
         <exclude name="OptimizableToArrayCall" />
         <exclude name="EmptyControlStatement" />
         <exclude name="PackageCase" />
     </rule>
 
     <rule ref="io/github/dgroup/arch4u/pmd/arch4u-ruleset.xml">
+        <exclude name="DoubleBraceInitialization" />
         <exclude name="UncommentedEmptyConstructor" />
         <exclude name="ShortVariable" />
         <exclude name="DataClass" />
@@ -116,7 +119,6 @@
         <exclude name="NullAssignment" />
         <exclude name="UseVarargs" />
         <exclude name="ConsecutiveLiteralAppends" />
-        <exclude name="DoubleBraceInitialization" />
         <exclude name="AccessorMethodGeneration" />
         <exclude name="UseOpenApiInRestEndpoints" />
         <exclude name="RestEndpointsWithoutExposedMetrics" />
@@ -128,18 +130,6 @@
         <exclude name="EmptyControlStatement" />
         <exclude name="CallSuperInConstructor" />
         <exclude name="PackageCase" />
-        <!--
-        <exclude name="ClassNamingConventions" />
-        <exclude name="ShortMethodName" />
-        <exclude name="UseTryWithResources" />
-        <exclude name="AvoidBranchingStatementAsLastInLoop" />
-        <exclude name="LooseCoupling" />
-        <exclude name="UnnecessaryFullyQualifiedName" />
-        <exclude name="ExcessiveMethodLength" />
-        <exclude name="MethodReturnsInternalArray" />
-        <exclude name="ArrayIsStoredDirectly" />
-        <exclude name="ExcessiveParameterList" />
-        <exclude name="PreserveStackTrace" />
-        -->
+        <exclude name="EmptyMethodInAbstractClassShouldBeAbstract" />
     </rule>
 </ruleset>
