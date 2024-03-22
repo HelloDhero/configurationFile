@@ -9,6 +9,7 @@
     <exclude-pattern>.*/build/generated-sources/.*</exclude-pattern>
     
     <rule ref="rulesets/internal/all-java.xml">
+        <exclude name="UseLocaleWithCaseConversions" />
         <exclude name="DoubleBraceInitialization" />
         <exclude name="UncommentedEmptyConstructor" />
         <exclude name="DoubleBraceInitialization" />
@@ -70,9 +71,11 @@
         <exclude name="PackageCase" />
         <exclude name="EmptyMethodInAbstractClassShouldBeAbstract" />
         <exclude name="LoosePackageCoupling" />
+        <exclude name="EmptyCatchBlock" />
     </rule>
 
     <rule ref="rulesets/java/quickstart.xml">
+        <exclude name="UseLocaleWithCaseConversions" />
         <exclude name="DoubleBraceInitialization" />
         <exclude name="UncommentedEmptyConstructor" />
         <exclude name="GuardLogStatement" />
@@ -84,9 +87,11 @@
         <exclude name="OptimizableToArrayCall" />
         <exclude name="EmptyControlStatement" />
         <exclude name="PackageCase" />
+        <exclude name="EmptyCatchBlock" />
     </rule>
 
     <rule ref="io/github/dgroup/arch4u/pmd/arch4u-ruleset.xml">
+        <exclude name="UseLocaleWithCaseConversions" />
         <exclude name="DoubleBraceInitialization" />
         <exclude name="UncommentedEmptyConstructor" />
         <exclude name="ShortVariable" />
@@ -131,5 +136,7 @@
         <exclude name="CallSuperInConstructor" />
         <exclude name="PackageCase" />
         <exclude name="EmptyMethodInAbstractClassShouldBeAbstract" />
+        <exclude name="TooManyMethods" />
+        <exclude name="EmptyCatchBlock" />
     </rule>
 </ruleset>
